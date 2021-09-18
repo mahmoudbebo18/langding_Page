@@ -23,20 +23,18 @@ body {
     font-family: $fontFamily !important;
     &::-webkit-scrollbar {
         width: 5px;
-      }
-      
-      /* Track */
-      &::-webkit-scrollbar-track {
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
         background: #f1f1f1;
-      }
-      
-      /* Handle */
-      &::-webkit-scrollbar-thumb {
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
         background: $mainColor;
-      }
+    }
 }
-
-
 
 .fa-bars {
     outline: none;
@@ -50,16 +48,15 @@ body {
 
 /* nav */
 
-
-.navbar.scrolled-nav{
+.navbar.scrolled-nav {
     position: fixed;
-    width:100%;
+    width: 100%;
     background-color: #fff;
     width: 100%;
     background-color: #fff !important;
     z-index: 99999;
     box-shadow: 0 0 5px #ccc;
-    .container{
+    .container {
         flex-direction: row-reverse !important;
     }
 }
@@ -86,7 +83,7 @@ body {
         }
         .nav-link {
             padding: 15px;
-            border-bottom:2px solid transparent
+            border-bottom: 2px solid transparent;
         }
         .nav-item.active {
             .nav-link {
@@ -283,8 +280,11 @@ body {
     padding: 64px 0;
     .why-img {
         position: relative;
-        &::after{
-            content: '';
+        @media(max-width:767px){
+            display: none;
+        }
+        &::after {
+            content: "";
             display: block;
             background-image: url(../imgs/feat.png);
             background-size: cover;
@@ -294,8 +294,34 @@ body {
             left: 132px;
             top: -5px;
             border-radius: 30px;
-            transform: rotate3d(1, 4, 1, 
-        -38deg)
+            transform: rotate3d(1, 4, 1, -38deg);
+            @media (max-width: 1199px) {
+                content: "";
+                display: block;
+                background-image: url(../imgs/feat.png);
+                background-size: cover;
+                width: 208px;
+                height: 387px;
+                position: absolute;
+                left: 114px;
+                top: -5px;
+                border-radius: 30px;
+                transform: rotate3d(1, 4, 1, -38deg);
+            }
+            @media (max-width: 991px) {
+                content: "";
+                display: block;
+                background-image: url(../imgs/feat.png);
+                background-size: cover;
+                width: 330px;
+                height: 594px;
+                position: absolute;
+                left: 163px;
+                top: -5px;
+                border-radius: 30px;
+                transform: rotate3d(1, 4, 1, -40deg);
+            }
+           
         }
         img {
             width: 95%;
@@ -498,7 +524,6 @@ body {
         padding-top: 40px;
         @media (max-width: 767px) {
             flex-wrap: wrap;
-           
         }
         h4 {
             font-weight: 700;
@@ -656,28 +681,27 @@ body {
         }
     }
 }
-.typed-cursor{
+.typed-cursor {
     display: none;
 }
 
-.typeme{
+.typeme {
     min-height: 55px;
 }
 
-footer{
+footer {
     background-color: $mainColor;
-    color:#fff;
+    color: #fff;
     padding: 25px;
     text-align: center;
-    .brands{
-        a{
-            color:#fff;
+    .brands {
+        a {
+            color: #fff;
             display: inline-block;
-            margin:0 8px
+            margin: 0 8px;
         }
     }
 }
-
 
 /* scroll*/
 

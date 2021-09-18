@@ -215,8 +215,11 @@ body {
   padding: 64px 0; }
   .why-us .why-img {
     position: relative; }
+    @media (max-width: 767px) {
+      .why-us .why-img {
+        display: none; } }
     .why-us .why-img::after {
-      content: '';
+      content: "";
       display: block;
       background-image: url(../imgs/feat.png);
       background-size: cover;
@@ -227,6 +230,32 @@ body {
       top: -5px;
       border-radius: 30px;
       transform: rotate3d(1, 4, 1, -38deg); }
+      @media (max-width: 1199px) {
+        .why-us .why-img::after {
+          content: "";
+          display: block;
+          background-image: url(../imgs/feat.png);
+          background-size: cover;
+          width: 208px;
+          height: 387px;
+          position: absolute;
+          left: 114px;
+          top: -5px;
+          border-radius: 30px;
+          transform: rotate3d(1, 4, 1, -38deg); } }
+      @media (max-width: 991px) {
+        .why-us .why-img::after {
+          content: "";
+          display: block;
+          background-image: url(../imgs/feat.png);
+          background-size: cover;
+          width: 330px;
+          height: 594px;
+          position: absolute;
+          left: 163px;
+          top: -5px;
+          border-radius: 30px;
+          transform: rotate3d(1, 4, 1, -40deg); } }
     .why-us .why-img img {
       width: 95%; }
   .why-us .why-head {
