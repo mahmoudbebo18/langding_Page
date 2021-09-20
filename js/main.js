@@ -24,7 +24,7 @@ $(document).ready(function () {
                 scrollTop:
                     $("#" + $(this).data("target")).offset().top -
                     $(".navbar").innerHeight(),
-            }, 400);
+            }, 800);
     });
 
     $('.navbar-nav .nav-item').click(function(){
@@ -45,7 +45,7 @@ $(document).ready(function () {
     });
     scrolling.click(function () {
         "use strict";
-        $("html,body").animate({ scrollTop: 0 }, 500);
+        $("html,body").animate({ scrollTop: 0 }, 700);
     });
 
 
@@ -57,8 +57,9 @@ $(document).ready(function () {
     $(window).scroll(function () {
         //sync nav links with sections
         $('section').each(function () {
+            var heightNav = $('.navbar').innerHeight();
 
-            if ($(window).scrollTop() >= $(this).offset().top - $('.navbar').innerHeight()) {
+            if ($(window).scrollTop() >= $(this).offset().top - (heightNav + 2) ) {
 
                 var bebo = $(this).attr('id');
                 $(".navbar-nav .nav-item").removeClass('active');
@@ -67,4 +68,48 @@ $(document).ready(function () {
             }
         });
     });
+
+
+     // show more button 
+
+      $('.expand-faq button').click(function(){
+          $('.hidden-question').slideDown();
+          $(this).fadeOut()
+      })
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+  // The default language is English
+  var lang = "en-gb";
+  $(".lang").each(function(index, element) {
+    $(this).text(arrLang[lang][$(this).attr("key")]);
+  });
+});
+
+// get/set the selected language
+$(".translate").click(function() {
+  var lang = $(this).attr("id");
+
+  $(".lang").each(function(index, element) {
+    $(this).text(arrLang[lang][$(this).attr("key")]);
+  });
+});
+
+

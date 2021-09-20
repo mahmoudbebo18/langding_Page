@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/animate.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
@@ -31,9 +34,10 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a data-target="hom" class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a>
+                            <a data-target="hom" class="nav-link" href="#">الرئيسية <span
+                                    class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a data-target="feat" class="nav-link" href="#"> المميزات </a>
@@ -61,16 +65,9 @@
         <div class="container">
             <div class="header-holder d-flex">
 
-                <div class="position-relative header-img-holder">
-                    <div class="header-img">
-                        <img src="imgs/header.png" alt="">
-                    </div>
-                </div>
 
 
-                <div class="header-img-2">
-                    <img src="imgs/header2.png" alt="">
-                </div>
+
 
                 <div class="content">
                     <div class="content-div">
@@ -79,7 +76,7 @@
                             تطبيقك المحمول الموثوق به لتلبية جميع احتياجاتك 😘
                         </h1>
                         <p class="typeme">
-                            
+
                         </p>
                         <div class="download-buttons">
                             <a href="#">
@@ -91,6 +88,17 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="position-relative header-img-holder">
+                    <div class="header-img">
+                        <img src="imgs/header.png" alt="">
+                    </div>
+                </div>
+
+                <div class="header-img-2">
+                    <img src="imgs/header2.png" alt="">
+                </div>
+
             </div>
         </div>
     </section>
@@ -223,6 +231,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="feat wow animate slideInUp " data-wow-duration="1s" data-wow-delay="0s">
+                            <i class="far fa-thumbs-up"></i>
                             <h4>تصميم بسيط</h4>
                             <p>يتميز التطبيق بالبساطة في التصميم متجنبا اي تعقيدات ومراعيا لتجربة المستخدم بالصورة
                                 المثالية
@@ -231,6 +240,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="feat wow animate slideInUp " data-wow-duration="1s" data-wow-delay=".1s">
+                            <i class="fas fa-user"></i>
                             <h4>سهل الاستخدام</h4>
                             <p>يوفر التطبيق لجميع مستخدميه من اي فئة عمرية سهولة الاستخدام نظرا للبساطة التي يتمتع بها
                                 التطبيق
@@ -239,7 +249,8 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="feat wow animate slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                            <h4>مجاني * </h4>
+                            <i class="fas fa-money-bill-alt d-block"></i>
+                            <h4>مجاني <span class="free">*</span> </h4>
                             <p>يوفر التطبيق الخدمة مجانية لجميع المشترين فكل ماعلليك فعله هو التسجيل فقط وستحصل على
                                 الخدمة%
                             </p>
@@ -247,6 +258,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="feat wow  animate slideInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                            <i class="fas fa-shield-alt"></i>
                             <h4> آمن</h4>
                             <p>استخدم التطبيق في عمليات البيع والشراء باريحية كلمة فالتطبيق امن يمكنك الدفع واستقبال
                                 اموالك
@@ -266,7 +278,7 @@
     <section class="why-us" id="feat">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 why-img wow  animate slideInRight" data-wow-duration="3s" >
+                <div class="col-lg-6 why-img wow  animate slideInRight" data-wow-duration="3s">
                     <img src="imgs/about.png" alt="why us ">
 
                 </div>
@@ -315,7 +327,147 @@
     </section>
     <!-- :::: // end why us  -->
 
-    <!-- pricing  -->
+    <section class="video-feat">
+        <div class="container">
+            <div class="vid-head">
+                <h3>تعرف على تجربة المستخدم الخاصة بنا </h3>
+                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+            </div>
+            <div class="vid-content">
+                <div class="video-player" data-toggle="modal" data-target="#exampleModalCenter">
+                    <img src="imgs/vid.png" alt="">
+                    <button>
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+
+                <div class="vid-caption row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="caption d-flex">
+                            <i class="fas fa-user"></i>
+                            <div class="title">
+                                <h5>الميزة الاولى</h5>
+                                <p>
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص العربى، تولد مثل هذا النص
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="caption d-flex">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="title">
+                                <h5>الميزة الثانية</h5>
+                                <p>
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص العربى، تولد مثل هذا النص
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="caption d-flex">
+                            <i class="fas fa-bicycle"></i>
+                            <div class="title">
+                                <h5>الميزة الثالثة</h5>
+                                <p>
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص العربى، تولد مثل هذا النص
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="caption d-flex">
+                            <i class="fas fa-money-bill-alt"></i>
+                            <div class="title">
+                                <h5>الميزة الرابعة</h5>
+                                <p>
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص العربى، تولد مثل هذا النص
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-partners">
+                <div class="part-head">
+                    <span>بعض الشركات التي تعمل معنا</span>
+                </div>
+                <div class="part-container">
+                    <div class="slide-imgs">
+                        <a href="#">
+                            <img src="imgs/part-1.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="imgs/part-2.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="imgs/part-3.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="imgs/part-4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="slide-imgs">
+                        <a href="#">
+                            <img src="imgs/part-1.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="imgs/part-2.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="imgs/part-3.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="imgs/part-4.png" alt="">
+                        </a>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <!-- Viedo Modal  -->
+
+    <!-- Button trigger modal-->
+
+    <!--Modal: modalYT-->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+
+            <!--Content-->
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <!--Body-->
+                    <div class="modal-body mb-0 p-0">
+
+                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U"
+                                allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <!--/.Content-->
+
+        </div>
+    </div>
+    <!--Modal: modalYT-->
+
+
 
 
     <section class="pricing" id="pri">
@@ -383,7 +535,7 @@
                 </div>
                 <div class="custom-price">
                     <h4>
-                        هل تبحث عن سعر مخصص ؟   دعنا نتحدث عن ذلك.
+                        هل تبحث عن سعر مخصص ؟ دعنا نتحدث عن ذلك.
                     </h4>
                     <button class="btn">
                         تواصل معنا الان
@@ -525,132 +677,73 @@
             </div>
 
             <div class="faq-content">
-
-                <div id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne">
-                                    #1 السؤال الأول
-                                </button>
-                                <i class="fas fa-chevron-up"></i>
-                            </h5>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#accordion">
-                            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="question">
+                            <h5>السؤال الاول </h5>
+                            <p>
                                 هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
                                 العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
                                 الحروف التى يولدها التطبيق.
-                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
-                                تريد، النص لن يبدو
-                            </div>
+                            </p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                    #2 السؤال الثاني
-                                </button>
-                                <i class="fas fa-chevron-down"></i>
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="question">
+                            <h5>السؤال الثاني </h5>
+                            <p>
                                 هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
                                 العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
                                 الحروف التى يولدها التطبيق.
-                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
-                                تريد، النص لن يبدو
-                            </div>
+                            </p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    #3 السؤال الثالث
-                                </button>
-                                <i class="fas fa-chevron-down"></i>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#accordion">
-                            <div class="card-body">
+                    <div class="col-lg-6 col-md-12 hidden-question">
+                        <div class="question">
+                            <h5>السؤال الثالث </h5>
+                            <p>
                                 هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
                                 العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
                                 الحروف التى يولدها التطبيق.
-                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
-                                تريد، النص لن يبدو
-                            </div>
+                            </p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    #4 السؤال الرابع
-                                </button>
-                                <i class="fas fa-chevron-down"></i>
-                            </h5>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                            <div class="card-body">
+                    <div class="col-lg-6 col-md-12 hidden-question">
+                        <div class="question">
+                            <h5>السؤال الرابع </h5>
+                            <p>
                                 هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
                                 العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
                                 الحروف التى يولدها التطبيق.
-                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
-                                تريد، النص لن يبدو
-                            </div>
+                            </p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    #5 السؤال الخامس
-                                </button>
-                                <i class="fas fa-chevron-down"></i>
-                            </h5>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                            <div class="card-body">
+                    <div class="col-lg-6 col-md-12 hidden-question">
+                        <div class="question">
+                            <h5>السؤال الخامس </h5>
+                            <p>
                                 هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
                                 العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
                                 الحروف التى يولدها التطبيق.
-                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
-                                تريد، النص لن يبدو
-                            </div>
+                            </p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingSix">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
-                                    aria-expanded="false" aria-controls="collapseSix">
-                                    #6 السؤال السادس
-                                </button>
-                                <i class="fas fa-chevron-down"></i>
-                            </h5>
-                        </div>
-                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                            <div class="card-body">
+                    <div class="col-lg-6 col-md-12 hidden-question">
+                        <div class="question">
+                            <h5>السؤال السادس </h5>
+                            <p>
                                 هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
                                 العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
                                 الحروف التى يولدها التطبيق.
-                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
-                                تريد، النص لن يبدو
-                            </div>
+                            </p>
                         </div>
+                    </div>
+                    <div class="expand-faq">
+                        <button class="btn">عرض المزيد </button>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </section>
@@ -691,30 +784,46 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
-    <!-- <script>
-        const swiper = new Swiper('.swiper-container-initialized', {
+    <script>
+        const swiper = new Swiper('.swiper', {
             // Optional parameters
             direction: 'vertical',
             loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
         });
-    </script> -->
+    </script>
     <script>
         new WOW().init();
     </script>
 
-<script>
-    // trigger typedJs
-    var typed = new Typed(".typeme", {
-        strings: [
-         " انسب طريقة للحصول على دراجتك الخاصة بالاضافة الى العديد من الامتيازات الاخرى قم بتحميلالتطبيق واكتشف كل ماتريد الان . ",
-         "انسب طريقة للحصول على دراجتك الخاصة بالاضافة الى العديد من الامتيازات الاخرى قم بتحميل التطبيق واكتشف كل ماتريد الان ."
-        ],
-        typeSpeed: 20,
-        backSpeed: 5,
-        loop: true,
-    });
+    <script>
+        // trigger typedJs
+        var typed = new Typed(".typeme", {
+            strings: [
+                " انسب طريقة للحصول على دراجتك الخاصة بالاضافة الى العديد من الامتيازات الاخرى قم بتحميلالتطبيق واكتشف كل ماتريد الان . ",
+                "انسب طريقة للحصول على دراجتك الخاصة بالاضافة الى العديد من الامتيازات الاخرى قم بتحميل التطبيق واكتشف كل ماتريد الان ."
+            ],
+            typeSpeed: 20,
+            backSpeed: 5,
+            loop: true,
+        });
 
-</script>
+    </script>
 
 </body>
 
