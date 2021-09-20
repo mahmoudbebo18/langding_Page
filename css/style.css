@@ -60,7 +60,8 @@ body {
 
 .navbar {
   background-color: transparent !important;
-  min-height: 80px; }
+  min-height: 80px;
+  box-shadow: none; }
   @media (max-width: 1200px) {
     .navbar {
       border-bottom: 1px solid #e5e5e5;
