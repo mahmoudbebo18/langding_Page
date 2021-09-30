@@ -616,15 +616,41 @@ body {
 .typeme {
   min-height: 55px; }
 
-footer {
+.footer {
   background-color: #003c34;
   color: #fff;
   padding: 25px;
   text-align: center; }
-  footer .brands a {
+  .footer .right-foot {
+    text-align: right; }
+    .footer .right-foot h5 {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 16px; }
+    .footer .right-foot ul {
+      padding: 0; }
+      .footer .right-foot ul li {
+        display: inline-block; }
+        .footer .right-foot ul li a {
+          color: #fff;
+          text-decoration: none;
+          padding: 5px 10px; }
+  .footer .left-foot {
+    text-align: right; }
+  .footer .brands a {
     color: #fff;
     display: inline-block;
-    margin: 0 8px; }
+    margin: 0 8px;
+    font-size: 13px; }
+  @media (max-width: 700px) {
+    .footer {
+      flex-wrap: wrap; }
+      .footer .right-foot {
+        width: 100%;
+        text-align: center; }
+      .footer .left-foot {
+        width: 100%;
+        text-align: center; } }
 
 /* scroll*/
 #scroll {

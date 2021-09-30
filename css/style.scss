@@ -746,16 +746,51 @@ body {
     min-height: 55px;
 }
 
-footer {
+.footer {
     background-color: $mainColor;
     color: #fff;
     padding: 25px;
     text-align: center;
+
+    .right-foot{
+        text-align: right;
+        h5{
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+        ul{
+            padding: 0;
+            li{
+                display: inline-block;
+                a{
+                    color:#fff;
+                    text-decoration: none;
+                    padding: 5px 10px;;
+                }
+            }
+        }
+    }
+    .left-foot{
+        text-align: right;
+    }
     .brands {
         a {
             color: #fff;
             display: inline-block;
             margin: 0 8px;
+            font-size: 13px;
+        }
+    }
+    @media(max-width:700px){
+        flex-wrap: wrap;
+        .right-foot{
+            width: 100%;
+            text-align: center;
+        }
+        .left-foot{
+            width: 100%;
+            text-align: center;
         }
     }
 }
