@@ -8,18 +8,15 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/animate.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
 </head>
 
-<body dir="rtl">
+<body dir="rtl" onload="slideMyImage()">
     <!-- start NavBar -->
     <section class="site-nav">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -102,120 +99,6 @@
             </div>
         </div>
     </section>
-
-    <!-- <div class="featureSliderstyle__FeatureContactWrapper-sc-1oeferb-1 fIKnqe">
-        <div class="featureSliderstyle__ImageGalleryWrap-sc-1oeferb-2 icgHSR">
-            <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
-                <div class="swiper-wrapper" style="transform: translate3d(-904px, 0px, 0px); transition-duration: 0ms;">
-                    <div class="swiper-slide single__img_slider" style="width: 226px;">
-                        <img src="imgs/logo.jpg" alt="Slide Thumb1" class="Image__ImageWrapper-sc-1tx8i5m-0 kigUdx">
-                    </div>
-                    <div class="swiper-slide single__img_slider" style="width: 226px;">
-                        <img src="imgs/logo.jpg" alt="Slide Thumb1" class="Image__ImageWrapper-sc-1tx8i5m-0 kigUdx">
-
-                    </div>
-                    <div class="swiper-slide single__img_slider" style="width: 226px;">
-                        <img src="imgs/logo.jpg" alt="Slide Thumb1" class="Image__ImageWrapper-sc-1tx8i5m-0 kigUdx">
-
-                    </div>
-                    <div class="swiper-slide swiper-slide-prev single__img_slider" style="width: 226px;">
-                        <img src="imgs/logo.jpg" alt="Slide Thumb1" class="Image__ImageWrapper-sc-1tx8i5m-0 kigUdx">
-
-                    </div>
-                    <div class="swiper-slide swiper-slide-active single__img_slider" style="width: 226px;">
-                        <img src="imgs/logo.jpg" alt="Slide Thumb1" class="Image__ImageWrapper-sc-1tx8i5m-0 kigUdx">
-
-                    </div>
-                    <div class="swiper-slide swiper-slide-next single__img_slider" style="width: 226px;">
-                        <img src="imgs/logo.jpg" alt="Slide Thumb1" class="Image__ImageWrapper-sc-1tx8i5m-0 kigUdx">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="featureSliderstyle__FeatureItemWrapper-sc-1oeferb-3 gJhPLK">
-            <div
-                class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-thumbs">
-                <div class="swiper-wrapper"
-                    style="transition-duration: 0ms; transform: translate3d(-2152.5px, 0px, 0px);">
-                    <div class="swiper-slide feature__outer">
-                        <div
-                            class="featureBlockstyle__FeatureBlockWrapper-sc-17r0x3j-0 bZZeBR feature__block icon_left">
-                            <div class="featureBlockstyle__IconWrapper-sc-17r0x3j-1 EVFJp icon__wrapper">1</div>
-                            <div class="featureBlockstyle__ContentWrapper-sc-17r0x3j-2 dYbgFW content__wrapper">
-                                <h3 font-weight="bold" class="Heading__HeadingWrapper-hu94h3-0 gTNfVV">Professional
-                                    Environment</h3>
-                                <p class="Text__TextWrapper-k4najr-0 eXFIys">We enjoy office retreats and visit famous
-                                    places of our country and abroad also.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide feature__outer">
-                        <div
-                            class="featureBlockstyle__FeatureBlockWrapper-sc-17r0x3j-0 bZZeBR feature__block icon_left">
-                            <div class="featureBlockstyle__IconWrapper-sc-17r0x3j-1 EVFJp icon__wrapper">2</div>
-                            <div class="featureBlockstyle__ContentWrapper-sc-17r0x3j-2 dYbgFW content__wrapper">
-                                <h3 font-weight="bold" class="Heading__HeadingWrapper-hu94h3-0 gTNfVV">Professional
-                                    Environment</h3>
-                                <p class="Text__TextWrapper-k4najr-0 eXFIys">We enjoy office retreats and visit famous
-                                    places of our country and abroad also.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide feature__outer">
-                        <div
-                            class="featureBlockstyle__FeatureBlockWrapper-sc-17r0x3j-0 bZZeBR feature__block icon_left">
-                            <div class="featureBlockstyle__IconWrapper-sc-17r0x3j-1 EVFJp icon__wrapper">3</div>
-                            <div class="featureBlockstyle__ContentWrapper-sc-17r0x3j-2 dYbgFW content__wrapper">
-                                <h3 font-weight="bold" class="Heading__HeadingWrapper-hu94h3-0 gTNfVV">Professional
-                                    Environment</h3>
-                                <p class="Text__TextWrapper-k4najr-0 eXFIys">We enjoy office retreats and visit famous
-                                    places of our country and abroad also.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-prev feature__outer">
-                        <div
-                            class="featureBlockstyle__FeatureBlockWrapper-sc-17r0x3j-0 bZZeBR feature__block icon_left">
-                            <div class="featureBlockstyle__IconWrapper-sc-17r0x3j-1 EVFJp icon__wrapper">4</div>
-                            <div class="featureBlockstyle__ContentWrapper-sc-17r0x3j-2 dYbgFW content__wrapper">
-                                <h3 font-weight="bold" class="Heading__HeadingWrapper-hu94h3-0 gTNfVV">Professional
-                                    Environment</h3>
-                                <p class="Text__TextWrapper-k4najr-0 eXFIys">We enjoy office retreats and visit famous
-                                    places of our country and abroad also.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide  feature__outer ">
-                        <div
-                            class="featureBlockstyle__FeatureBlockWrapper-sc-17r0x3j-0 bZZeBR feature__block icon_left">
-                            <div class="featureBlockstyle__IconWrapper-sc-17r0x3j-1 EVFJp icon__wrapper">5</div>
-                            <div class="featureBlockstyle__ContentWrapper-sc-17r0x3j-2 dYbgFW content__wrapper">
-                                <h3 font-weight="bold" class="Heading__HeadingWrapper-hu94h3-0 gTNfVV">Professional
-                                    Environment</h3>
-                                <p class="Text__TextWrapper-k4najr-0 eXFIys">We enjoy office retreats and visit famous
-                                    places of our country and abroad also.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-next feature__outer  swiper-slide-active">
-                        <div
-                            class="featureBlockstyle__FeatureBlockWrapper-sc-17r0x3j-0 bZZeBR feature__block icon_left">
-                            <div class="featureBlockstyle__IconWrapper-sc-17r0x3j-1 EVFJp icon__wrapper">6</div>
-                            <div class="featureBlockstyle__ContentWrapper-sc-17r0x3j-2 dYbgFW content__wrapper">
-                                <h3 font-weight="bold" class="Heading__HeadingWrapper-hu94h3-0 gTNfVV">Professional
-                                    Environment</h3>
-                                <p class="Text__TextWrapper-k4najr-0 eXFIys">We enjoy office retreats and visit famous
-                                    places of our country and abroad also.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
     <!-- about us -->
 
     <section class="about text-center" id="feat">
@@ -425,12 +308,12 @@
                             <img src="imgs/part-4.png" alt="">
                         </a>
                     </div>
-    
+
                 </div>
             </div>
         </div>
 
-        
+
     </section>
 
     <!-- Viedo Modal  -->
@@ -438,7 +321,7 @@
     <!-- Button trigger modal-->
 
     <!--Modal: modalYT-->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter"
+    <section class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter"
         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
 
@@ -464,10 +347,101 @@
             <!--/.Content-->
 
         </div>
-    </div>
+    </section>
     <!--Modal: modalYT-->
 
 
+    <section class="sliding-feat text-center">
+        <div class="container">
+            <!-- heading -->
+            <div class="slide-head">
+                <h2>تعرف على كل ميزاتنا المثيرة</h2>
+                <p class="head-desc">
+                    قم ببناء مكان عمل مذهل وقم بتنمية أعمالك باستخدام النظام الأساسي الشامل بمحتويات مذهلة.
+                </p>
+            </div>
+            <!-- Content -->
+
+            <ul class="list-unstyled d-flex content">
+                <li class="active-step-li">
+                    <div class="d-flex feat-step">
+                        <span>1</span>
+                        <div class="step-holder">
+                            <h5>الميزة الاولى</h5>
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                               
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="d-flex feat-step even">
+                        <span>2</span>
+                        <div class="step-holder">
+                            <h5>الميزة الثانية</h5>
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                             
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="d-flex feat-step">
+                        <span>3</span>
+                        <div class="step-holder">
+                            <h5>الميزة الثالثة</h5>
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                               
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="d-flex feat-step even">
+                        <span>4</span>
+                        <div class="step-holder">
+                            <h5>الميزة الرابعة</h5>
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                               
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="d-flex feat-step">
+                        <span>5</span>
+                        <div class="step-holder">
+                            <h5>الميزة الخامسة</h5>
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                              
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="d-flex feat-step even">
+                        <span>6</span>
+                        <div class="step-holder">
+                            <h5>الميزة السادسة</h5>
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                               
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+            <!-- the sliding images  -->
+            <div class="the-sliding-imgs">
+                <div class="bg-holder position-relative">
+                    <img id="slidingImage" src="imgs/feat.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
 
     <section class="pricing" id="pri">
@@ -753,7 +727,7 @@
 
     <!-- footer -->
 
-    <footer>
+    <section class="footer">
         <p>
             جميع الحقوق محفوظة &copy; <strong>Bikerz</strong>
         </p>
@@ -768,7 +742,7 @@
                 <i class="fab fa-instagram"></i>
             </a>
         </div>
-    </footer>
+    </section>
 
     <!-- //footer -->
 
@@ -782,35 +756,24 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Swipper Trigger  -->
     <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'vertical',
-            loop: true,
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        });
+        const swiper = new Swiper('.swiper-container');
     </script>
+
+
+    <!-- WOW Js Trigger  -->
     <script>
         new WOW().init();
     </script>
 
+
+    <!-- Typed Js  Trigger  -->
     <script>
         // trigger typedJs
         var typed = new Typed(".typeme", {

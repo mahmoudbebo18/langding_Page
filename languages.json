@@ -1,0 +1,12 @@
+{
+    "en-lang": {
+        "HOME": "Home",
+        "ABOUT": "About Us",
+        "CONTACT": "Contact Us"
+    },
+    "ar-lang": {
+        "HOME": "الرئيسية",
+        "ABOUT": "نبذة عنا",
+        "CONTACT": "اتصل بنا "
+    }
+}

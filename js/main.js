@@ -5,9 +5,9 @@ $(document).ready(function () {
     "use strict";
 
 
-     // navbar toggle class 
-    
-     $(window).scroll(function () {
+    // navbar toggle class 
+
+    $(window).scroll(function () {
         if ($(this).scrollTop() >= 100) {
             $('.navbar').addClass('scrolled-nav')
         } else {
@@ -27,10 +27,10 @@ $(document).ready(function () {
             }, 800);
     });
 
-    $('.navbar-nav .nav-item').click(function(){
+    $('.navbar-nav .nav-item').click(function () {
         $(this).addClass('active').siblings().removeClass('active')
     })
-     $('.navbar-nav .nav-item .nav-link').click(function(e){
+    $('.navbar-nav .nav-item .nav-link').click(function (e) {
         e.preventDefault()
     })
 
@@ -59,7 +59,7 @@ $(document).ready(function () {
         $('section').each(function () {
             var heightNav = $('.navbar').innerHeight();
 
-            if ($(window).scrollTop() >= $(this).offset().top - (heightNav + 2) ) {
+            if ($(window).scrollTop() >= $(this).offset().top - (heightNav + 2)) {
 
                 var bebo = $(this).attr('id');
                 $(".navbar-nav .nav-item").removeClass('active');
@@ -70,12 +70,34 @@ $(document).ready(function () {
     });
 
 
-     // show more button 
+    // show more button 
 
-      $('.expand-faq button').click(function(){
-          $('.hidden-question').slideDown();
-          $(this).fadeOut()
-      })
+    $('.expand-faq button').click(function () {
+        $('.hidden-question').slideDown();
+        $(this).fadeOut()
+    })
+
+
+
+
+    // sliding feat 
+
+    var lis_count = $('.sliding-feat ul li').length;
+    var active_li_index = 0;
+
+    setInterval(function () {
+        if ($('.sliding-feat ul li.active-step-li').index() == lis_count - 1) {
+            active_li_index = 0;
+        }
+
+        else {
+            active_li_index++;
+        }
+
+
+        $('.sliding-feat ul li.active-step-li').removeClass('active-step-li');
+        $('.sliding-feat ul li').eq(active_li_index).addClass('active-step-li');
+    }, 5000);
 });
 
 
@@ -83,33 +105,32 @@ $(document).ready(function () {
 
 
 
+// current image 
+
+var slidingImg = document.getElementById("slidingImage");
 
 
+// array of sliding images 
+var images = new Array(
+    "imgs/feat.png",
+    "imgs/feat2.png",
+    "imgs/feat3.png",
+    "imgs/feat4.png",
+    "imgs/feat5.png",
+    "imgs/feat6.png"
+
+);
 
 
+var myLength = images.length;
 
+var i = 0;
 
-
-
-
-
-
-
-$(document).ready(function() {
-  // The default language is English
-  var lang = "en-gb";
-  $(".lang").each(function(index, element) {
-    $(this).text(arrLang[lang][$(this).attr("key")]);
-  });
-});
-
-// get/set the selected language
-$(".translate").click(function() {
-  var lang = $(this).attr("id");
-
-  $(".lang").each(function(index, element) {
-    $(this).text(arrLang[lang][$(this).attr("key")]);
-  });
-});
-
-
+function slideMyImage(){
+    if(i > myLength - 1){
+        i=0
+    }
+    slidingImg.src =  images[i];
+    i++;
+    setTimeout('slideMyImage()',5000)
+}
