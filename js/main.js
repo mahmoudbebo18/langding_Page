@@ -132,5 +132,5 @@ function slideMyImage(){
     }
     slidingImg.src =  images[i];
     i++;
-    setTimeout('slideMyImage()',5000)
+    setTimeout('slideMyImage()',4600)
 }

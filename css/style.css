@@ -1002,7 +1002,8 @@ data-styled.g933[id="sc-keyframes-kJPzGr"] {
         left: 71px;
         top: 5px;
         border-radius: 20px;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: .3s all ease-in-out; }
         @media (max-width: 1200px) {
           .sliding-feat .the-sliding-imgs .bg-holder img {
             width: 169px;
