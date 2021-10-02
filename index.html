@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
 </head>
 
-<body dir="rtl" onload="slideMyImage()">
+<body dir="rtl">
     <!-- start NavBar -->
     <section class="site-nav">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -360,86 +359,106 @@
                     قم ببناء مكان عمل مذهل وقم بتنمية أعمالك باستخدام النظام الأساسي الشامل بمحتويات مذهلة.
                 </p>
             </div>
-            <!-- Content -->
+            <!-- Sliding Content -->
 
-            <ul class="list-unstyled d-flex content">
-                <li class="active-step-li">
-                    <div class="d-flex feat-step">
-                        <span>1</span>
-                        <div class="step-holder">
-                            <h5>الميزة الاولى</h5>
-                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
-                            </p>
+                <ol class="carousel-indicators list-unstyled d-flex content">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                        <div class="d-flex feat-step">
+                            <span>1</span>
+                            <div class="step-holder">
+                                <h5>الميزة الاولى</h5>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص
+
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="d-flex feat-step even">
-                        <span>2</span>
-                        <div class="step-holder">
-                            <h5>الميزة الثانية</h5>
-                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                        <div class="d-flex feat-step">
+                            <span>2</span>
+                            <div class="step-holder">
+                                <h5>الميزة الثانية</h5>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص
 
-                            </p>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="d-flex feat-step">
-                        <span>3</span>
-                        <div class="step-holder">
-                            <h5>الميزة الثالثة</h5>
-                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                        <div class="d-flex feat-step even">
+                            <span>3</span>
+                            <div class="step-holder">
+                                <h5>الميزة الثالثة</h5>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص
 
-                            </p>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="d-flex feat-step even">
-                        <span>4</span>
-                        <div class="step-holder">
-                            <h5>الميزة الرابعة</h5>
-                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3">
+                        <div class="d-flex feat-step even">
+                            <span>4</span>
+                            <div class="step-holder">
+                                <h5>الميزة الرابعة</h5>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص
 
-                            </p>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="d-flex feat-step">
-                        <span>5</span>
-                        <div class="step-holder">
-                            <h5>الميزة الخامسة</h5>
-                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4">
+                        <div class="d-flex feat-step even">
+                            <span>5</span>
+                            <div class="step-holder">
+                                <h5>الميزة الخامسة</h5>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص
 
-                            </p>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="d-flex feat-step even">
-                        <span>6</span>
-                        <div class="step-holder">
-                            <h5>الميزة السادسة</h5>
-                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5">
+                        <div class="d-flex feat-step even">
+                            <span>6</span>
+                            <div class="step-holder">
+                                <h5>الميزة السادسة</h5>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص
 
-                            </p>
+                                </p>
+                            </div>
                         </div>
+                    </li>
+                </ol>
+
+                <div class="carousel-inner the-sliding-imgs">
+                    <div class="carousel-item bg-holder active">
+                        <img class="d-block" src="imgs/feat.png" alt="First slide">
                     </div>
-                </li>
-
-            </ul>
-
-            <!-- the sliding images  -->
-            <div class="the-sliding-imgs">
-                <div class="bg-holder position-relative">
-                    <img id="slidingImage" src="imgs/feat.png" alt="">
+                    <div class="carousel-item bg-holder">
+                        <img class="d-block" src="imgs/feat.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item bg-holder">
+                        <img class="d-block" src="imgs/feat.png" alt="Third slide">
+                    </div>
+                    <div class="carousel-item bg-holder">
+                        <img class="d-block" src="imgs/feat.png" alt="Third slide">
+                    </div>
+                    <div class="carousel-item bg-holder">
+                        <img class="d-block" src="imgs/feat.png" alt="Third slide">
+                    </div>
+                    <div class="carousel-item bg-holder">
+                        <img class="d-block" src="imgs/feat.png" alt="Third slide">
+                    </div>
                 </div>
-
             </div>
-
         </div>
     </section>
 
@@ -741,7 +760,7 @@
                     <a href="#">الدعم الفني </a>
                 </li>
                 <li>
-                    <a href="#"> اسئلة شائعة  </a>
+                    <a href="#"> اسئلة شائعة </a>
                 </li>
             </ul>
         </div>
@@ -777,12 +796,13 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/mdb.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Swipper Trigger  -->
     <script>
-        const swiper = new Swiper('.swiper-container');
+        $('.carousel').carousel({
+            interval: 3000
+        })
     </script>
 
 
