@@ -439,23 +439,23 @@
                 </ol>
 
                 <div class="carousel-inner the-sliding-imgs">
-                    <div class="carousel-item bg-holder active">
+                    <div class="carousel-item bg-holder active" data-interval="3000">
                         <img class="d-block" src="imgs/feat.png" alt="First slide">
                     </div>
-                    <div class="carousel-item bg-holder">
-                        <img class="d-block" src="imgs/feat.png" alt="Second slide">
+                    <div class="carousel-item bg-holder" data-interval="3000">
+                        <img class="d-block" src="imgs/feat2.png" alt="Second slide">
                     </div>
-                    <div class="carousel-item bg-holder">
-                        <img class="d-block" src="imgs/feat.png" alt="Third slide">
+                    <div class="carousel-item bg-holder" data-interval="3000">
+                        <img class="d-block" src="imgs/feat3.png" alt="Third slide">
                     </div>
-                    <div class="carousel-item bg-holder">
-                        <img class="d-block" src="imgs/feat.png" alt="Third slide">
+                    <div class="carousel-item bg-holder" data-interval="3000">
+                        <img class="d-block" src="imgs/feat4.png" alt="Third slide">
                     </div>
-                    <div class="carousel-item bg-holder">
-                        <img class="d-block" src="imgs/feat.png" alt="Third slide">
+                    <div class="carousel-item bg-holder" data-interval="3000">
+                        <img class="d-block" src="imgs/feat5.png" alt="Third slide">
                     </div>
-                    <div class="carousel-item bg-holder">
-                        <img class="d-block" src="imgs/feat.png" alt="Third slide">
+                    <div class="carousel-item bg-holder" data-interval="3000">
+                        <img class="d-block" src="imgs/feat6.png" alt="Third slide">
                     </div>
                 </div>
             </div>
@@ -540,7 +540,7 @@
 
         </div>
     </section>
-    <!-- ::: // end pricing -->
+    <!-- ::: / end pricing -->
 
 
     <!-- customers  -->
@@ -800,9 +800,11 @@
 
     <!-- Swipper Trigger  -->
     <script>
-        $('.carousel').carousel({
-            interval: 3000
+
+        $(document).ready(function () {
+            $('.carousel').carousel();
         })
+
     </script>
 
 
