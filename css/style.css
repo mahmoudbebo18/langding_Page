@@ -71,9 +71,9 @@ body {
   box-shadow: 0 0 5px #ccc; }
   .navbar.scrolled-nav .container {
     flex-direction: row !important; }
-    .navbar.scrolled-nav .container .navbar-nav {
-      margin-left: 0 !important;
-      margin-right: auto !important; }
+  .navbar.scrolled-nav .container .navbar-nav {
+    margin-left: auto !important;
+    margin-right: auto !important; }
 
 .navbar {
   background-color: transparent !important;
@@ -127,7 +127,7 @@ body {
     display: block;
     height: 649px;
     width: 301px;
-    z-index: 22222;
+    z-index: 22;
     position: absolute;
     left: -31px;
     background-size: cover;
@@ -986,7 +986,7 @@ data-styled.g933[id="sc-keyframes-kJPzGr"] {
             border-image: initial;
             box-sizing: border-box;
             transition: all 0.25s ease-in-out;
-            animation: 2s linear infinite  rot;
+            animation: 2s linear infinite rot;
             opacity: 0;
             visibility: hidden; }
         .sliding-feat .content li .feat-step .step-holder h5 {
@@ -1049,5 +1049,16 @@ data-styled.g933[id="sc-keyframes-kJPzGr"] {
     @media (max-width: 1200px) {
       .sliding-feat .the-sliding-imgs {
         display: none; } }
+
+/* translate config */
+.langButtons {
+  position: relative;
+  z-index: 888; }
+  .langButtons .dropdown .dropdown-toggle {
+    padding: 5px;
+    background-color: #fff;
+    color: #003c34;
+    font-size: 17px;
+    box-shadow: 0 0 5px #ccc; }
 
 /*# sourceMappingURL=style.css.map */

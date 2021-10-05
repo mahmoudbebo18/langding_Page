@@ -71,3 +71,26 @@ $(document).ready(function () {
         $(this).fadeOut()
     });
 });
+
+
+//translate 
+$(document).ready(function () {
+    // The default language is English
+    $.getJSON("lang.json", function (data) {
+        var myLang = data;
+        var lang = "ar";
+        $(".transLang").each(function (index, element) {
+            $(this).text(myLang[lang][$(this).attr("key")]);
+        });
+        // get/set the selected language
+        $(".translateLink").click(function (e) {
+            e.preventDefault();
+            var lang = $(this).attr("id");
+            $(".transLang").each(function (index, element) {
+                $(this).text(myLang[lang][$(this).attr("key")]);
+            });
+        });
+    })
+
+});
+

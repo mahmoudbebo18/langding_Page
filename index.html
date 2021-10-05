@@ -32,22 +32,34 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a data-target="hom" class="nav-link" href="#">الرئيسية <span
+                            <a data-target="hom" class="nav-link transLang" key="home" href="#"><span
                                     class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a data-target="feat" class="nav-link" href="#"> المميزات </a>
+                            <a data-target="feat" class="nav-link transLang" key="features" href="#"></a>
                         </li>
                         <li class="nav-item">
-                            <a data-target="pri" class="nav-link" href="#">الاسعار</a>
+                            <a data-target="pri" class="nav-link transLang" key="prices" href="#"></a>
                         </li>
                         <li class="nav-item">
-                            <a data-target="testi" class="nav-link" href="#">اراء العملاء</a>
+                            <a data-target="testi" class="nav-link transLang" key="testim" href="#"></a>
                         </li>
                         <li class="nav-item">
-                            <a data-target="freq" class="nav-link" href="#">الاسئلة الشائعة</a>
+                            <a data-target="freq" class="nav-link transLang" key="faq" href="#"></a>
                         </li>
-
+                    </ul>
+                    <div class="langButtons">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-globe"></i>
+                            </button>
+                            <div class="dropdown-menu text-right " aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item translateLink" id="ar" href="#"> العربية</a>
+                                <a class="dropdown-item translateLink" id="en" href="#">الانجليزية</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -68,10 +80,10 @@
                 <div class="content">
                     <div class="content-div">
 
-                        <h1>
-                            تطبيقك المحمول الموثوق به لتلبية جميع احتياجاتك 😘
+                        <h1 class="transLang" key="mainHead">
+
                         </h1>
-                        <p class="typeme">
+                        <p class="typeme transLang" key="headDesc">
 
                         </p>
                         <div class="download-buttons">
@@ -103,10 +115,13 @@
     <section class="about text-center" id="feat">
         <div class="container">
             <div class="about-heading">
-                <h2 class="text-center wow animate slideInUp " data-wow-duration="1s" data-wow-delay="0s"> مميزات
-                    التطبيق </h2>
-                <p class="feat wow animate slideInUp " data-wow-duration="1s" data-wow-delay=".2s">يوفر التطبيق العديد
-                    من الامتيازات التي يوفرها لكل من البائع والمشتري </p>
+                <h2 class="text-center wow animate slideInUp transLang " key="appFeatures" data-wow-duration="1s"
+                    data-wow-delay="0s">
+
+                </h2>
+                <p class="feat wow animate slideInUp transLang " key="appFeatParagraph" data-wow-duration="1s"
+                    data-wow-delay=".2s">يوفر التطبيق العديد
+                </p>
             </div>
 
             <div class="about-content">
@@ -114,37 +129,36 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="feat wow animate slideInUp " data-wow-duration="1s" data-wow-delay="0s">
                             <i class="far fa-thumbs-up"></i>
-                            <h4>تصميم بسيط</h4>
-                            <p>يتميز التطبيق بالبساطة في التصميم متجنبا اي تعقيدات ومراعيا لتجربة المستخدم بالصورة
-                                المثالية
+                            <h4 class="transLang" key="simpleDesignHead"> </h4>
+                            <p class="transLang" key="simpleDesignParagraph">
+
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="feat wow animate slideInUp " data-wow-duration="1s" data-wow-delay=".1s">
                             <i class="fas fa-user"></i>
-                            <h4>سهل الاستخدام</h4>
-                            <p>يوفر التطبيق لجميع مستخدميه من اي فئة عمرية سهولة الاستخدام نظرا للبساطة التي يتمتع بها
-                                التطبيق
+                            <h4 class="transLang" key="easyToUseHead"></h4>
+                            <p class="transLang" key="easyToUseParagraph">
+
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="feat wow animate slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
                             <i class="fas fa-money-bill-alt d-block"></i>
-                            <h4>مجاني <span class="free">*</span> </h4>
-                            <p>يوفر التطبيق الخدمة مجانية لجميع المشترين فكل ماعلليك فعله هو التسجيل فقط وستحصل على
-                                الخدمة%
+                            <h4 class="transLang" key="freeHead"> <span class="free">*</span> </h4>
+                            <p class="transLang" key="freeParagrap">
+
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="feat wow  animate slideInUp" data-wow-duration="1s" data-wow-delay=".3s">
                             <i class="fas fa-shield-alt"></i>
-                            <h4> آمن</h4>
-                            <p>استخدم التطبيق في عمليات البيع والشراء باريحية كلمة فالتطبيق امن يمكنك الدفع واستقبال
-                                اموالك
-                                بامان
+                            <h4 class="transLang" key="secureHead"> </h4>
+                            <p class="transLang" key="secureParagraph">
+
                             </p>
 
                         </div>
@@ -165,17 +179,17 @@
 
                 </div>
                 <div class="col-lg-6 col-md-12  ">
-                    <h2 class="why-head wow  animate slideInUp" data-wow-duration="1.5s">
+                    <h2 class="why-head wow  animate slideInUp transLang" key="whyToChoseHead" data-wow-duration="1.5s">
 
-                        لماذا تختار التطبيق لاستخدامك اليومي؟
+
                     </h2>
                     <div class="why-feat">
                         <div class="step d-flex wow  animate slideInUp" data-wow-duration="1.5s">
                             <span>01</span>
                             <div>
-                                <h5>الميزة الاولى </h5>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص
+                                <h5 class="transLang" key="firstFeatHead"> </h5>
+                                <p class="transLang" key="firstFeatParagraph">
+
                                 </p>
                             </div>
 
@@ -183,9 +197,8 @@
                         <div class="step d-flex wow  animate slideInUp" data-wow-duration="1.5s">
                             <span>02</span>
                             <div>
-                                <h5>الميزة الاولى </h5>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص
+                                <h5 class="transLang" key="secondFeatHead"> </h5>
+                                <p class="transLang" key="secondFeatParagraph">
                                 </p>
                             </div>
 
@@ -193,9 +206,9 @@
                         <div class="step d-flex wow  animate slideInUp" data-wow-duration="1.5s">
                             <span>03</span>
                             <div>
-                                <h5>الميزة الاولى </h5>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص
+                                <h5 class="transLang" key="thirdFeatHead"> </h5>
+                                <p class="transLang" key="thirdFeatParagraph">
+
                                 </p>
                             </div>
 
@@ -212,8 +225,9 @@
     <section class="video-feat">
         <div class="container">
             <div class="vid-head">
-                <h3>تعرف على تجربة المستخدم الخاصة بنا </h3>
-                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+                <h3 class="transLang" key="discoverHead"> </h3>
+                <p class="transLang" key="discoverParagraph">
+                </p>
             </div>
             <div class="vid-content">
                 <div class="video-player" data-toggle="modal" data-target="#exampleModalCenter">
@@ -228,10 +242,9 @@
                         <div class="caption d-flex">
                             <i class="fas fa-user"></i>
                             <div class="title">
-                                <h5>الميزة الاولى</h5>
-                                <p>
-                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى، تولد مثل هذا النص
+                                <h5 class="transLang" key="firstVidHead"> </h5>
+                                <p class="transLang" key="firstVidParagraph">
+
                                 </p>
                             </div>
                         </div>
@@ -240,10 +253,9 @@
                         <div class="caption d-flex">
                             <i class="fas fa-mobile-alt"></i>
                             <div class="title">
-                                <h5>الميزة الثانية</h5>
-                                <p>
-                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى، تولد مثل هذا النص
+                                <h5 class="transLang" key="secondVidHead"> </h5>
+                                <p class="transLang" key="secondVidParagraph">
+
                                 </p>
                             </div>
                         </div>
@@ -252,10 +264,8 @@
                         <div class="caption d-flex">
                             <i class="fas fa-bicycle"></i>
                             <div class="title">
-                                <h5>الميزة الثالثة</h5>
-                                <p>
-                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى، تولد مثل هذا النص
+                                <h5 class="transLang" key="thirdVidHead"></h5>
+                                <p class="transLang" key="thirdVidParagraph">
                                 </p>
                             </div>
                         </div>
@@ -264,10 +274,9 @@
                         <div class="caption d-flex">
                             <i class="fas fa-money-bill-alt"></i>
                             <div class="title">
-                                <h5>الميزة الرابعة</h5>
-                                <p>
-                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى، تولد مثل هذا النص
+                                <h5 class="transLang" key="fourthVidHead"></h5>
+                                <p class="transLang" key="fourthVidParagraph">
+
                                 </p>
                             </div>
                         </div>
@@ -276,7 +285,7 @@
             </div>
             <div class="our-partners">
                 <div class="part-head">
-                    <span>بعض الشركات التي تعمل معنا</span>
+                    <span class="transLang" key="someCompanies"></span>
                 </div>
                 <div class="part-container">
                     <div class="slide-imgs">
@@ -354,9 +363,8 @@
         <div class="container">
             <!-- heading -->
             <div class="slide-head">
-                <h2>تعرف على كل ميزاتنا المثيرة</h2>
-                <p class="head-desc">
-                    قم ببناء مكان عمل مذهل وقم بتنمية أعمالك باستخدام النظام الأساسي الشامل بمحتويات مذهلة.
+                <h2 class="transLang" key="SlideHead"></h2>
+                <p class="head-desc transLang" key="SlideP">
                 </p>
             </div>
             <!-- Sliding Content -->
@@ -368,9 +376,9 @@
                         <div class="d-flex feat-step">
                             <span>1</span>
                             <div class="step-holder">
-                                <h5>الميزة الاولى</h5>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص
+                                <h5 class="transLang" key="slideFirstHead"></h5>
+                                <p class="transLang" key="slideFirstParagraph">
+
 
                                 </p>
                             </div>
@@ -380,9 +388,8 @@
                         <div class="d-flex feat-step">
                             <span>2</span>
                             <div class="step-holder">
-                                <h5>الميزة الثانية</h5>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص
+                                <h5 class="transLang" key="slideSecondHead"></h5>
+                                <p class="transLang" key="slideSecondParagraph">
 
                                 </p>
                             </div>
@@ -392,9 +399,9 @@
                         <div class="d-flex feat-step even">
                             <span>3</span>
                             <div class="step-holder">
-                                <h5>الميزة الثالثة</h5>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص
+                                <h5 class="transLang" key="slideThirdHead"> </h5>
+                                <p class="transLang" key="slideThirdParagraph">
+
 
                                 </p>
                             </div>
@@ -404,9 +411,9 @@
                         <div class="d-flex feat-step even">
                             <span>4</span>
                             <div class="step-holder">
-                                <h5>الميزة الرابعة</h5>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص
+                                <h5 class="transLang" key="slideFourthHead"> </h5>
+                                <p class="transLang" key="slideFourthParagraph">
+
 
                                 </p>
                             </div>
@@ -416,9 +423,9 @@
                         <div class="d-flex feat-step even">
                             <span>5</span>
                             <div class="step-holder">
-                                <h5>الميزة الخامسة</h5>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص
+                                <h5 class="transLang" key="slideFifthHead"> </h5>
+                                <p class="transLang" key="slideFifthParagraph">
+
 
                                 </p>
                             </div>
@@ -428,9 +435,9 @@
                         <div class="d-flex feat-step even">
                             <span>6</span>
                             <div class="step-holder">
-                                <h5>الميزة السادسة</h5>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص
+                                <h5 class="transLang" key="slidesixthHead"> </h5>
+                                <p class="transLang" key="slideSixthParagraph">
+
 
                                 </p>
                             </div>
@@ -474,21 +481,22 @@
         </div>
         <div class="container">
             <div class="price-head">
-                <h2>تعرف على خطة الأسعار المثيرة لدينا</h2>
-                <p>لقد صممنا خطة التسعير الخاصة بنا بأسعار معقولة للمستخدمين</p>
+                <h2 class="transLang" key="priceHead"></h2>
+                <p class="transLang" key="priceP">
+                </p>
             </div>
             <div class="price-palns">
                 <div class="plans-container d-flex">
                     <ul class="list-unstyled price-items">
-                        <li>العروض</li>
-                        <li> الاشتراك الشهري </li>
-                        <li> الاشترك السنوي </li>
-                        <li> الامتيازات المجانية </li>
+                        <li class="transLang" key="offers"></li>
+                        <li class="transLang" key="monthSub"></li>
+                        <li class="transLang" key="yearSub"></li>
+                        <li class="transLang" key="freeThings"></li>
                     </ul>
                     <div class="my-plan">
-                        <h2 class="plane-head">المجانية</h2>
+                        <h2 class="plane-head transLang" key="freeSub"></h2>
                         <ul class="list-unstyled">
-                            <li>عرض واحد مجاني</li>
+                            <li class="transLang" key="oneFreeOffer"></li>
                             <li>
                                 <i class="fas fa-times-circle"></i>
                             </li>
@@ -499,39 +507,39 @@
                                 <i class="fas fa-times-circle"></i>
                             </li>
                         </ul>
-                        <button class="btn"> اختيار الخطة </button>
+                        <button class="btn transLang" key="chosePlane"></button>
 
                     </div>
                     <div class="my-plan">
-                        <h2 class="plane-head">الفضية</h2>
+                        <h2 class="plane-head transLang" key="silver"></h2>
                         <ul class="list-unstyled">
-                            <li>3 عروض</li>
-                            <li>10 ريال / شهر</li>
-                            <li>100 ريال / سنة</li>
-                            <li>شهرين مجاني للاشتراك السنوي</li>
+                            <li class="transLang" key="threeOffer"></li>
+                            <li class="transLang" key="silverMonthlyPrice"></li>
+                            <li class="transLang" key="silverAnnualPrice"></li>
+                            <li class="transLang" key="packageFeats"></li>
                         </ul>
-                        <button class="btn"> اختيار الخطة </button>
+                        <button class="btn transLang" key="chosePlane"></button>
 
                     </div>
                     <div class="my-plan">
-                        <h2 class="plane-head">الذهبية</h2>
+                        <h2 class="plane-head transLang" key="gold"></h2>
                         <ul class="list-unstyled">
-                            <li>7 عروض</li>
-                            <li>15 ريال / شهر</li>
-                            <li>150 ريال / سنة</li>
-                            <li>شهرين مجاني للاشتراك السنوي</li>
+                            <li class="transLang" key="sevenOffer"></li>
+                            <li class="transLang" key="goldMonthlyPrice"></li>
+                            <li class="transLang" key="goldAnnualPrice"></li>
+                            <li class="transLang" key="packageFeats"></li>
                         </ul>
-                        <button class="btn"> اختيار الخطة </button>
+                        <button class="btn transLang" key="chosePlane"></button>
 
                     </div>
 
                 </div>
                 <div class="custom-price">
-                    <h4>
-                        هل تبحث عن سعر مخصص ؟ دعنا نتحدث عن ذلك.
+                    <h4 class="transLang" key="searchForPrice">
+
                     </h4>
-                    <button class="btn">
-                        تواصل معنا الان
+                    <button class="btn transLang " key="contactNow">
+
                     </button>
                 </div>
 
@@ -548,8 +556,8 @@
     <section class="customers-tweets" id="testi">
         <div class="container">
             <div class="testi-head">
-                <h2> ماذا يقول عملاؤنا عنا ؟ </h2>
-                <p>بعض التعليقات الملهمة من عملائنا </p>
+                <h2 class="transLang" key="clientsHead"> </h2>
+                <p class="transLang" key="clientsP"> </p>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12">
@@ -557,15 +565,12 @@
                         <div class="client-info d-flex">
                             <img src="imgs/clien.jpg" alt="client">
                             <div class="client-name">
-                                <h5>اسم العميل</h5>
-                                <p>الوظيفة الخاصة بالعميل</p>
+                                <h5 class="transLang" key="clientsName"></h5>
+                                <p class="transLang" key="clientsPosition"></p>
                             </div>
                         </div>
-                        <div class="client-replay">
-                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
-                            التى يولدها التطبيق.
-                            إذا كنت تحتاج
+                        <div class="client-replay transLang" key="clienReply">
+
                         </div>
                     </div>
                 </div>
@@ -574,15 +579,11 @@
                         <div class="client-info d-flex">
                             <img src="imgs/clien.jpg" alt="client">
                             <div class="client-name">
-                                <h5>اسم العميل</h5>
-                                <p>الوظيفة الخاصة بالعميل</p>
+                                <h5 class="transLang" key="clientsName"> </h5>
+                                <p class="transLang" key="clientsPosition"> </p>
                             </div>
                         </div>
-                        <div class="client-replay">
-                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
-                            التى يولدها التطبيق.
-                            إذا كنت تحتاج
+                        <div class="client-replay transLang" key="clienReply">
                         </div>
                     </div>
                 </div>
@@ -591,15 +592,11 @@
                         <div class="client-info d-flex">
                             <img src="imgs/clien.jpg" alt="client">
                             <div class="client-name">
-                                <h5>اسم العميل</h5>
-                                <p>الوظيفة الخاصة بالعميل</p>
+                                <h5 class="transLang" key="clientsName"> </h5>
+                                <p class="transLang" key="clientsPosition"> </p>
                             </div>
                         </div>
-                        <div class="client-replay">
-                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
-                            التى يولدها التطبيق.
-                            إذا كنت تحتاج
+                        <div class="client-replay transLang" key="clienReply">
                         </div>
                     </div>
                 </div>
@@ -608,15 +605,11 @@
                         <div class="client-info d-flex">
                             <img src="imgs/clien.jpg" alt="client">
                             <div class="client-name">
-                                <h5>اسم العميل</h5>
-                                <p>الوظيفة الخاصة بالعميل</p>
+                                <h5 class="transLang" key="clientsName"> </h5>
+                                <p class="transLang" key="clientsPosition"> </p>
                             </div>
                         </div>
-                        <div class="client-replay">
-                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
-                            التى يولدها التطبيق.
-                            إذا كنت تحتاج
+                        <div class="client-replay transLang" key="clienReply">
                         </div>
                     </div>
                 </div>
@@ -625,15 +618,11 @@
                         <div class="client-info d-flex">
                             <img src="imgs/clien.jpg" alt="client">
                             <div class="client-name">
-                                <h5>اسم العميل</h5>
-                                <p>الوظيفة الخاصة بالعميل</p>
+                                <h5 class="transLang" key="clientsName"> </h5>
+                                <p class="transLang" key="clientsPosition"> </p>
                             </div>
                         </div>
-                        <div class="client-replay">
-                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
-                            التى يولدها التطبيق.
-                            إذا كنت تحتاج
+                        <div class="client-replay transLang" key="clienReply">
                         </div>
                     </div>
                 </div>
@@ -642,15 +631,11 @@
                         <div class="client-info d-flex">
                             <img src="imgs/clien.jpg" alt="client">
                             <div class="client-name">
-                                <h5>اسم العميل</h5>
-                                <p>الوظيفة الخاصة بالعميل</p>
+                                <h5 class="transLang" key="clientsName"> </h5>
+                                <p class="transLang" key="clientsPosition"> </p>
                             </div>
                         </div>
-                        <div class="client-replay">
-                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
-                            التى يولدها التطبيق.
-                            إذا كنت تحتاج
+                        <div class="client-replay transLang" key="clienReply">
                         </div>
                     </div>
                 </div>
@@ -665,74 +650,62 @@
     <section class="faq" id="freq">
         <div class="container">
             <div class="faq-head">
-                <h2>أسئلة شائعة</h2>
-                <p>ما الذي تبحث عنه وتجد الحل في صفحة الأسئلة الشائعة الخاصة بنا</p>
+                <h2 class="transLang" key="faqHead"></h2>
+                <p class="transLang" key="faqP">
+                </p>
             </div>
 
             <div class="faq-content">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
                         <div class="question">
-                            <h5>السؤال الاول </h5>
-                            <p>
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                                العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
-                                الحروف التى يولدها التطبيق.
+                            <h5 class="transLang" key="firstQues"> </h5>
+                            <p class="transLang" key="response">
+
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <div class="question">
-                            <h5>السؤال الثاني </h5>
-                            <p>
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                                العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
-                                الحروف التى يولدها التطبيق.
+                            <h5 class="transLang" key="secondQues"> </h5>
+                            <p class="transLang" key="secondResponse">
+
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 hidden-question">
                         <div class="question">
-                            <h5>السؤال الثالث </h5>
-                            <p>
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                                العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
-                                الحروف التى يولدها التطبيق.
+                            <h5 class="transLang" key="thirdQues"> </h5>
+                            <p class="transLang" key="thirdResponse">
+
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 hidden-question">
                         <div class="question">
-                            <h5>السؤال الرابع </h5>
-                            <p>
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                                العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
-                                الحروف التى يولدها التطبيق.
+                            <h5 class="transLang" key="fourthQues"> </h5>
+                            <p class="transLang" key="fourthResponse">
+
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 hidden-question">
                         <div class="question">
-                            <h5>السؤال الخامس </h5>
-                            <p>
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                                العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
-                                الحروف التى يولدها التطبيق.
+                            <h5 class="transLang" key="fifthQues"> </h5>
+                            <p class="transLang" key="fifthResponse">
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 hidden-question">
                         <div class="question">
-                            <h5>السؤال السادس </h5>
-                            <p>
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                                العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
-                                الحروف التى يولدها التطبيق.
+                            <h5 class="transLang" key="sixthQues"> </h5>
+                            <p class="transLang" key="sixthResponse">
+
                             </p>
                         </div>
                     </div>
                     <div class="expand-faq">
-                        <button class="btn">عرض المزيد </button>
+                        <button class="btn transLang" key="showMore"></button>
                     </div>
                 </div>
 
@@ -748,25 +721,25 @@
 
     <section class="footer d-flex justify-content-between">
         <div class="right-foot">
-            <h5>روابط سريعة </h5>
+            <h5 class="transLang" key="fastLink"> </h5>
             <ul class="list-unstyled">
                 <li>
-                    <a href="#">تواصل معنا</a>
+                    <a href="#" class="transLang" key="contact"></a>
                 </li>
                 <li>
-                    <a href="#"> نبذة عنا </a>
+                    <a href="#" class="transLang" key="about"> </a>
                 </li>
                 <li>
-                    <a href="#">الدعم الفني </a>
+                    <a href="#" class="transLang" key="techSup"> </a>
                 </li>
                 <li>
-                    <a href="#"> اسئلة شائعة </a>
+                    <a href="#" class="transLang" key="faq"> </a>
                 </li>
             </ul>
         </div>
         <div class="left-foot">
-            <p>
-                جميع الحقوق محفوظة &copy; <strong>Bikerz</strong>
+            <p class="transLang" key="copyRight">
+                &copy; <strong>Bikerz</strong>
             </p>
             <div class="brands">
                 <a href="#">
@@ -812,23 +785,6 @@
     <script>
         new WOW().init();
     </script>
-
-
-    <!-- Typed Js  Trigger  -->
-    <script>
-        // trigger typedJs
-        var typed = new Typed(".typeme", {
-            strings: [
-                " انسب طريقة للحصول على دراجتك الخاصة بالاضافة الى العديد من الامتيازات الاخرى قم بتحميلالتطبيق واكتشف كل ماتريد الان . ",
-                "انسب طريقة للحصول على دراجتك الخاصة بالاضافة الى العديد من الامتيازات الاخرى قم بتحميل التطبيق واكتشف كل ماتريد الان ."
-            ],
-            typeSpeed: 20,
-            backSpeed: 5,
-            loop: true,
-        });
-
-    </script>
-
 </body>
 
 </html>
