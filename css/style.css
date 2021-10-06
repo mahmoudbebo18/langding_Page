@@ -188,7 +188,9 @@ body {
             width: 85%; } }
         @media (max-width: 500px) {
           .intro .content .content-div h1 {
-            width: 100%; } }
+            width: 100%;
+            font-size: 24px;
+            line-height: 35px; } }
       .intro .content .content-div p {
         font-size: 18px;
         color: #003c34; }
@@ -217,6 +219,9 @@ body {
 /*about*/
 .about {
   padding: 200px 0 50px; }
+  @media (max-width: 1200px) {
+    .about {
+      padding-top: 50px; } }
   .about .about-heading h2 {
     font-size: 26px;
     font-weight: 700;
@@ -264,9 +269,6 @@ body {
   padding: 64px 0; }
   .why-us .why-img {
     position: relative; }
-    @media (max-width: 767px) {
-      .why-us .why-img {
-        display: none; } }
     .why-us .why-img::after {
       content: "";
       display: block;
@@ -281,30 +283,46 @@ body {
       transform: rotate3d(1, 4, 1, -38deg); }
       @media (max-width: 1199px) {
         .why-us .why-img::after {
-          content: "";
-          display: block;
-          background-image: url(../imgs/feat.png);
-          background-size: cover;
           width: 208px;
           height: 387px;
-          position: absolute;
           left: 114px;
-          top: -5px;
-          border-radius: 30px;
-          transform: rotate3d(1, 4, 1, -38deg); } }
+          top: -5px; } }
       @media (max-width: 991px) {
         .why-us .why-img::after {
-          content: "";
-          display: block;
-          background-image: url(../imgs/feat.png);
-          background-size: cover;
           width: 330px;
           height: 594px;
-          position: absolute;
           left: 163px;
-          top: -5px;
-          border-radius: 30px;
-          transform: rotate3d(1, 4, 1, -40deg); } }
+          top: -5px; } }
+      @media (max-width: 767px) {
+        .why-us .why-img::after {
+          width: 252px;
+          height: 443px;
+          left: 118px;
+          top: -5px; } }
+      @media (max-width: 575px) {
+        .why-us .why-img::after {
+          width: 252px;
+          height: 468px;
+          left: 134px;
+          top: -5px; } }
+      @media (max-width: 425px) {
+        .why-us .why-img::after {
+          width: 188px;
+          height: 350px;
+          left: 100px;
+          top: -5px; } }
+      @media (max-width: 375px) {
+        .why-us .why-img::after {
+          width: 165px;
+          height: 305px;
+          left: 88px;
+          top: -5px; } }
+      @media (max-width: 320px) {
+        .why-us .why-img::after {
+          width: 139px;
+          height: 255px;
+          left: 76px;
+          top: -5px; } }
     .why-us .why-img img {
       width: 95%; }
   .why-us .why-head {

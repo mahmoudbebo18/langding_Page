@@ -93,13 +93,12 @@ body {
     .container {
         flex-direction: row !important;
     }
-    .container{
-        .navbar-nav{
-            margin-left:auto !important;
-            margin-right:auto !important
+    .container {
+        .navbar-nav {
+            margin-left: auto !important;
+            margin-right: auto !important;
         }
     }
-   
 }
 
 .navbar {
@@ -238,6 +237,8 @@ body {
                 }
                 @media (max-width: 500px) {
                     width: 100%;
+                    font-size: 24px;
+                    line-height: 35px;
                 }
             }
             p {
@@ -277,6 +278,9 @@ body {
 
 .about {
     padding: 200px 0 50px;
+    @media (max-width: 1200px) {
+        padding-top: 50px;
+    }
     .about-heading {
         h2 {
             font-size: 26px;
@@ -339,9 +343,6 @@ body {
     padding: 64px 0;
     .why-img {
         position: relative;
-        @media (max-width: 767px) {
-            display: none;
-        }
         &::after {
             content: "";
             display: block;
@@ -355,30 +356,46 @@ body {
             border-radius: 30px;
             transform: rotate3d(1, 4, 1, -38deg);
             @media (max-width: 1199px) {
-                content: "";
-                display: block;
-                background-image: url(../imgs/feat.png);
-                background-size: cover;
                 width: 208px;
                 height: 387px;
-                position: absolute;
                 left: 114px;
                 top: -5px;
-                border-radius: 30px;
-                transform: rotate3d(1, 4, 1, -38deg);
             }
             @media (max-width: 991px) {
-                content: "";
-                display: block;
-                background-image: url(../imgs/feat.png);
-                background-size: cover;
                 width: 330px;
                 height: 594px;
-                position: absolute;
                 left: 163px;
                 top: -5px;
-                border-radius: 30px;
-                transform: rotate3d(1, 4, 1, -40deg);
+            }
+            @media (max-width: 767px) {
+                width: 252px;
+                height: 443px;
+                left: 118px;
+                top: -5px;
+            }
+            @media (max-width: 575px) {
+                width: 252px;
+                height: 468px;
+                left: 134px;
+                top: -5px;
+            }
+            @media (max-width: 425px) {
+                width: 188px;
+                height: 350px;
+                left: 100px;
+                top: -5px;
+            }
+            @media (max-width: 375px) {
+                width: 165px;
+                height: 305px;
+                left: 88px;
+                top: -5px;
+            }
+            @media (max-width: 320px) {
+                width: 139px;
+                height: 255px;
+                left: 76px;
+                top: -5px;
             }
         }
         img {
